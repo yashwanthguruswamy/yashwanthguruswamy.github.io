@@ -1,103 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yashwanth Guruswamy | Data & Analytics Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashwanth Guruswamy | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background: #f4f4f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 0;
+    .hero {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      padding: 80px 20px;
       text-align: center;
     }
-    nav a {
-      margin: 0 1rem;
-      color: #f9f9f9;
-      text-decoration: none;
+    .hero img {
+      border-radius: 50%;
+      width: 150px;
+      margin-bottom: 20px;
     }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: #fff;
-      margin-top: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #222;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    footer {
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 30px;
       text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #fff;
     }
-    a {
-      color: #0077cc;
+    .project-card {
+      transition: transform 0.3s ease-in-out;
     }
-    a:hover {
-      text-decoration: underline;
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background: #212529;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
+  <section class="hero">
+    <img src="your_photo.jpg" alt="Yashwanth Guruswamy" />
     <h1>Yashwanth Guruswamy</h1>
-    <p>Business Analytics Graduate | Python • SQL • Tableau • Power BI</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>👋 About Me</h2>
-    <p>I’m a Business Analytics graduate from Arizona State University with 3+ years in data and tech. I build impactful dashboards, automate operations, and translate complex data into business strategy. Passionate about supply chain, AI, and product analytics.</p>
+    <p>Business Analyst | Data & AI Enthusiast | Project Strategist</p>
+    <a href="mailto:yparashu@asu.edu" class="btn btn-light">Contact Me</a>
   </section>
 
-  <section id="projects">
-    <h2>📁 Projects</h2>
-    <ul>
-      <li><strong>Retail Inventory Optimization</strong> – SKU-level forecasting dashboard using Python + Tableau [<a href="https://github.com/yashwanthguruswamy/retail-inventory-optimization">GitHub</a>]</li>
-      <li><strong>Sales Quota Performance</strong> – Tableau dashboard tracking quotas, commissions, and rep eligibility [<a href="https://github.com/yashwanthguruswamy/sales-quota-performance-dashboard">GitHub</a>]</li>
-      <li><strong>Yelp Market NLP Analysis</strong> – Geo sentiment modeling for restaurant expansion [<a href="https://github.com/yashwanthguruswamy/Yelp-Market-Analysis-Identifying-Prime-Restaurant-Locations-Cuisines">GitHub</a>]</li>
-      <li><strong>ASU RoomSense (Capstone)</strong> – YOLOv5 + Python system for live occupancy monitoring [<a href="https://github.com/yashwanthguruswamy/Asu-roomsense">GitHub</a>]</li>
-    </ul>
+  <section class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <img src="images/roomsense.png" class="card-img-top" alt="ASU RoomSense" />
+          <div class="card-body">
+            <h5 class="card-title">ASU RoomSense</h5>
+            <p class="card-text">Real-time zone monitoring using YOLOv5 and OpenCV for ASU student centers.</p>
+            <a href="https://github.com/yashwanthguruswamy/Asu-roomsense" class="btn btn-outline-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <img src="images/churn.png" class="card-img-top" alt="Churn Intelligence" />
+          <div class="card-body">
+            <h5 class="card-title">SaaS Churn Intelligence</h5>
+            <p class="card-text">MRR analytics and churn prediction using customer usage trends and classification.</p>
+            <a href="https://github.com/yashwanthguruswamy/SaaS-Revenue-Churn-Intelligence" class="btn btn-outline-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>💡 Skills</h2>
-    <p><strong>Languages:</strong> Python, SQL, R<br>
-       <strong>Tools:</strong> Tableau, Power BI, Excel, Git, AWS, VS Code<br>
-       <strong>Frameworks:</strong> scikit-learn, pandas, numpy, matplotlib<br>
-       <strong>Certifications:</strong> PwC Power BI, Lean Six Sigma White Belt</p>
-  </section>
-
-  <section id="contact">
-    <h2>📬 Let’s Connect</h2>
-    <p>Email: <a href="mailto:yparashu@asu.edu">yparashu@asu.edu</a></p>
-    <p>GitHub: <a href="https://github.com/yashwanthguruswamy">@yashwanthguruswamy</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yashwanthguruswamy">linkedin.com/in/yashwanthguruswamy</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Yashwanth Guruswamy</p>
+  <footer class="footer">
+    <p>© 2025 Yashwanth Guruswamy • <a href="https://www.linkedin.com/in/yashwanthguruswamy/" class="text-white">LinkedIn</a> • <a href="https://github.com/yashwanthguruswamy" class="text-white">GitHub</a></p>
   </footer>
 </body>
 </html>
